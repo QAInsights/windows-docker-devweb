@@ -6,7 +6,7 @@ This docker image helps you to run LoadRunner Developer scripts in Windows conta
 Following are the prerequisites required to work in LoadRunner Developer:
 
 * LoadRunner Developer package (latest stable version)
-* Working knowledge on DevWeb protocol
+* Working knowledge on DevWeb protocol. Check out my [Udemy course](https://www.udemy.com/course/performance-testing-using-truweb/) to learn about DevWeb procotol.
 
 ## How to download LoadRunner Developer?
 
@@ -51,3 +51,6 @@ Using the mount volume command, after the execution is completed, you can view t
 ## Why building the image is required?
 
 DevWeb package file is not publicly downloadable. You need to login and download it. This repo doesn't contain the DevWeb package, as it is against Micro Focus terms to host the DevWeb contents in the public repo. It is must for you to download the DevWeb zip file and place it in your local repo.
+
+## Learn more
+Visit my (blog)[https://qainsights.com/what-is-loadrunner-developer/] to learn more about LoadRunner Developer, DevWeb and more.
