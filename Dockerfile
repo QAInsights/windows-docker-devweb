@@ -20,10 +20,10 @@ RUN Invoke-WebRequest 'https://download.microsoft.com/download/9/3/F/93FCF1E7-E6
     Remove-Item vc_redist.x64.exe;
 
 # Download the LoadRunner Developer Package from https://marketplace.microfocus.com/appdelivery/content/loadrunner-developer
-RUN Expand-Archive /DevWeb_2020.1.zip -DestinationPath /DevWeb_2020.1
+RUN Expand-Archive /LoadRunner_Developer_2020.2.zip -DestinationPath /LoadRunner_Developer_2020.2
 
 # Set the working directory
-WORKDIR C:\DevWeb_2020.1\DevWeb
+WORKDIR C:\LoadRunner_Developer_2020.2\DevWeb
 
 # Entrypoint
 ENTRYPOINT ["powershell.exe", "/entrypoint.ps1"]
