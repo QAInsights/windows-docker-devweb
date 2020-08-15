@@ -21,7 +21,6 @@ Following are the prerequisites required to work in LoadRunner Developer:
 LoadRunner Developer is free to use for up to 50 virtual users. You need to create an account at Micro Focus Marketplace.
 * Download LoadRunner Windows package from [marketplace](https://marketplace.microfocus.com/appdelivery/content/loadrunner-developer).
 
-
 ## How to build this image?
 
 I suggest you to build this image before you start using it. Follow the below steps to build this image.
@@ -32,7 +31,7 @@ I suggest you to build this image before you start using it. Follow the below st
 
 `docker build -t <name> .`
 
-e.g. `docker build -t devweb .`
+e.g. `docker build -t devweb .` or `docker build -t devweb . --network "Default Switch"`
 
 This image uses Windows Server core as base image. It will download Visual C++ Redistributable for Visual Studio 2015 and install it inside your container. This component is prerequisite for LoadRunner Developer.
 
